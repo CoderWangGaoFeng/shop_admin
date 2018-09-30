@@ -72,6 +72,7 @@ function subForm(){
 	 // document.getElementById("addGoods").submit();
 	 var form = new FormData(document.getElementById("addGoods"));
 	 form.append("accountId",localStorage.getItem("id"));
+	 form.append("token",localStorage.getItem("token"));
 	// var formData = new FormData($( "#addGoods")[0]);  
      $.ajax({  
           url: path+"goods" ,  /*这是处理文件上传的servlet*/
